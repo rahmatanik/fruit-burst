@@ -46,8 +46,8 @@
 
   <body>
     <!-- Header part -->
-    <header class="container mx-auto py-5">
-      <nav class="lg:bg-tomato rounded-full lg:px-15 lg:py-2">
+    <header class="container mx-auto py-5 px-1 lg:px-0">
+      <nav class="lg:bg-tomato rounded-full lg:px-15 lg:py-2 px-4 shadow-lg">
         <!-- Nav part -->
         <div class="navbar">
           <div class="navbar-start lg:hidden">
@@ -68,9 +68,10 @@
                   />
                 </svg>
               </label>
+              <!-- Mobile Menu -->
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 px-2"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 px-2 bg-white"
               >
                 <li><a class="hover:bg-tomato">Home</a></li>
                 <li><a class="hover:bg-tomato">About Us</a></li>
@@ -79,6 +80,7 @@
               </ul>
             </div>
           </div>
+          <!-- large screen menu -->
           <div class="navbar-start hidden lg:flex text-white">
             <ul class="menu menu-horizontal">
               <li><a class="hover:bg-tomato">Home</a></li>
@@ -91,29 +93,31 @@
             class="navbar-start md:navbar-start lg:navbar-center flex items-center gap-4 justify-center"
           >
             <img src="./images/logo.png" alt="" />
-            <h3 class="text-black lg:text-white font-bold text-2xl">
+            <h3 class="text-black lg:text-white font-bold text-xl lg:text-2xl">
               Fruit Burst
             </h3>
           </div>
 
           <div class="navbar-end hidden lg:flex">
-            <input
-              type="text"
-              placeholder="Search here"
-              class="input input-bordered border-none hover:outline-none bg-gray-100 w-full max-w-xs rounded-full"
-            />
-            <!-- <button class="btn">
-              <i
-                class="fa-solid fa-magnifying-glass rounded-r-full rounded-b-full"
+            <div class="flex bg-white px-7 py-4 rounded-full">
+              <input
+                class="h-auto bg-transparent outline-none"
+                type="text"
+                placeholder="Search here"
+              /><i
+                class="fa-solid fa-magnifying-glass rounded-r-full rounded-b-full mt-1"
               ></i>
-            </button> -->
+            </div>
           </div>
         </div>
       </nav>
       <!-- Hero carousel section-->
       <section class="relative">
-        <div class="carousel w-full my-10 text-center mx-auto">
-          <div id="slide1" class="carousel-item relative w-full">
+        <div class="carousel w-full my-10 text-center mx-auto rounded-xl">
+          <div
+            id="slide1"
+            class="carousel-item relative w-full h-56 md:h-80 lg:h-auto"
+          >
             <img src="./images/banner1.png" class="w-full" />
             <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
             <div
@@ -128,12 +132,12 @@
                   doorstep
                   <br />
                 </h3>
-                <p class="text-white text-sm lg:text-xl my-2 md:my-4 lg:my-8">
+                <p class="text-white text-xs lg:text-xl my-2 md:my-4 lg:my-8">
                   We supply highly quality organic products
                 </p>
 
                 <button
-                  class="btn bg-tomato border-none text-white hover:bg-black text-sm lg:text-lg"
+                  class="btn bg-tomato py-1 border-none text-white hover:bg-black text-sm lg:text-lg"
                 >
                   Shop Now
                 </button>
@@ -141,7 +145,10 @@
               <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div>
-          <div id="slide2" class="carousel-item relative w-full">
+          <div
+            id="slide2"
+            class="carousel-item relative w-full h-56 md:h-80 lg:h-auto"
+          >
             <img src="./images/banner2.png" class="w-full" />
             <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
             <div
@@ -169,7 +176,10 @@
               <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
           </div>
-          <div id="slide3" class="carousel-item relative w-full">
+          <div
+            id="slide3"
+            class="carousel-item relative w-full h-56 md:h-80 lg:h-auto"
+          >
             <img src="/images/banner3.png" class="w-full" />
             <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
             <div
@@ -189,7 +199,7 @@
                 </p>
 
                 <button
-                  class="btn bg-tomato border-none text-white hover:bg-black text-sm lg:text-lg"
+                  class="btn bg-tomato text-xs lg:text-lg border-none text-white hover:bg-black"
                 >
                   Shop Now
                 </button>
@@ -197,7 +207,10 @@
               <a href="#slide4" class="btn btn-circle">❯</a>
             </div>
           </div>
-          <div id="slide4" class="carousel-item relative w-full">
+          <div
+            id="slide4"
+            class="carousel-item relative w-full h-56 md:h-80 lg:h-auto"
+          >
             <img src="./images/banner4.png" class="w-full" />
             <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
             <div
@@ -228,7 +241,7 @@
         </div>
         <!-- category part -->
         <div
-          class="px-8 flex justify-center flex-col lg:flex-row gap-8 bg-gray-50 py-10 lg:-mt-24 rounded-xl shadow-lg md:absolute lg:absolute lg:z-20 lg:left-52"
+          class="hidden md:hidden lg:visible gap-8 absolute -bottom-24 left-56 w-2/3 px-16 py-12 lg:flex lg:justify-around bg-white drop-shadow-xl rounded-xl"
           --
         >
           <div class="">
